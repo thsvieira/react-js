@@ -1,4 +1,3 @@
-
 @mixin flex-column-center {
     display: flex;
     flex-direction: column;
@@ -11,6 +10,7 @@
     justify-content: center;
     align-items: center;
 }
+
 
 body {
     margin: 0;
@@ -26,9 +26,50 @@ header {
     color: #FFF;
 }
 
+img {
+    width: 600px;
+}
 
 .container {
     @include flex-column-center;
     width: 100%;
-    box-sizing: border-box;
+}
+
+.post {
+    @include flex-column-center;
+    background-color: #FFF;
+    width: 700px;
+    border-radius: 7px;
+    border-width: 1px;
+    margin: 8px;
+    padding: 10px;
+}
+
+.titulo {
+    font-size: 40px;
+    color: cadetblue;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.subtitulo {
+    margin: 5px;
+}
+
+.botao {
+    @include flex-center;
+    height: 40px;
+    background: none;
+    border-radius: 5px;
+    color: #4c89e3;
+    border: 2px solid #4c89e3;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+    width: 100%;
+}
+
+.botao:hover {
+    background-color: #4c89e3;
+    color: #FFF;
 }

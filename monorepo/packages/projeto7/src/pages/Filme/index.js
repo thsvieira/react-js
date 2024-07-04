@@ -43,13 +43,23 @@ function Filme(){
     }
 
     return(
-        <div className="loading-detalhes">
+        <div className="detalhes-filme">
             <h1>{filme.title}</h1>
             <img src={`${IMG_URL}${filme.backdrop_path}`} alt={filme.title}/>
 
             <h3>Sinopse</h3>
             <span>{filme.overview}</span>
             <strong>Avaliação: {filme.vote_average.toFixed(2)} / 10</strong>
+
+            <div className="area-buttons">
+                <button>Salvar</button>
+                <button>
+                    <a href="#">
+                        Trailer
+                    </a>
+                </button>
+            </div>
+
         </div>
     );
 }

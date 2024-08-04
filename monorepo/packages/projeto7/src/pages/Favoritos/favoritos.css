@@ -1,39 +1,71 @@
-.meus-filmes{
+.meus-filmes {
     margin-top: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.meus-filmes h1{
+.meus-filmes h1 {
     margin-bottom: 14px;
     font-size: 20px;
 }
 
-.meus-filmes span{
+.meus-filmes span {
     font-size: 18px;
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.meus-filmes ul{
+.meus-filmes ul {
     width: 720px;
+    padding: 0;
 }
 
-.meus-filmes ul li{
+.meus-filmes ul li {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 14px;
+    flex-direction: column;
+    align-items: center; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
 }
 
-.meus-filmes div{
+.meus-filmes div {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    width: 100%;
 }
 
-.meus-filmes div a{
+.meus-filmes div a {
     text-decoration: none;
     color: #116feb;
     margin-right: 14px;
+}
+
+@media (max-width: 768px) {
+    .meus-filmes ul {
+        width: 100%;
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .meus-filmes h1 {
+        font-size: 18px;
+    }
+
+    .meus-filmes span {
+        font-size: 16px;
+    }
+
+    .meus-filmes div a,
+    .meus-filmes div button {
+        margin-right: 8px;
+        font-size: 14px;
+    }
 }
